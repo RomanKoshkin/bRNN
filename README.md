@@ -6,7 +6,7 @@
 
 ## Release notes
 
-This repository is a single-core C++/Python implementation of a recurrent network of binary neurons that given the right parameters, self-organizes to a fixed number of cell-assemblies, focusing on ease-of-use, performance and reproducibility and speed.
+This repository is a single-core C++/Python implementation of a recurrent network of binary neurons that, given the right parameters, self-organizes to a fixed number of cell-assemblies, focusing on ease-of-use, performance, reproducibility and speed.
 
 **Ease of use**
 * Supports in-simulation parameter manipulation.
@@ -23,7 +23,7 @@ This repository is a single-core C++/Python implementation of a recurrent networ
 
 * Linux (other OSs are not tested)
 * Python 3.9
-* Python libraries: `pip install scikit-learn==0.23.2 scikit-network==0.20.0 scipy==1.6.1 numpy==1.19.2 networkx==2.5 tqdm matplotlib==3.3.4`.
+* Python libraries: `pip install scikit-learn==0.23.2 scikit-network==0.20.0 scipy==1.6.1 numpy==1.19.2 networkx==2.5 pandas tqdm matplotlib==3.3.4`.
 
 
 ## Getting started
