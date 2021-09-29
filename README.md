@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https:/travis-ci.org/joemccann/dillinger.svg?branch=master)
 
-![Teaser image](https://svgshare.com/i/acV.svg | 250x250)
+<img src="https://svgshare.com/i/acV.svg" width=50% height=50%>
 
 ## Release notes
 
