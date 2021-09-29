@@ -1,8 +1,8 @@
-## Self-organization in a recurrent network of binary neurons &mdash; Single-core C++/Python implementation
+# Self-organization in a recurrent network of binary neurons &mdash; Single-core C++/Python implementation
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https:/travis-ci.org/joemccann/dillinger.svg?branch=master)
 
-![Teaser image](https://svgshare.com/i/acV.svg)
+![Teaser image](https://svgshare.com/i/acV.svg =250x250)
 
 ## Release notes
 
@@ -41,23 +41,14 @@ sh grid_search.sh
 ```
 This runs a grid of 10000 simulations. You can control the cells that will run in the `grid_serach.sh` script.
 
-Outputs from the above commands are placed under `out/*.png`, controlled by `--outdir`. Downloaded network pickles are cached under `$HOME/.cache/dnnlib`, which can be overridden by setting the `DNNLIB_CACHE_DIR` environment variable. The default PyTorch extension build directory is `$HOME/.cache/torch_extensions`, which can be overridden by setting `TORCH_EXTENSIONS_DIR`.
+Outputs from the each cell of the grid (that is, each instantiation of the model) will be saved to the path set in the variable `path_to_save_wts_on_bucket` in the file `grid_cell.py`. Make sure to set other paths for data dumps (`path_to_save_wts_on_flash`, `slurm_out_folder`) as necessary.
 
 
 
-## Using networks from Python
+## Running evolved or naive networks from Jupyter
 
-You can use pre-trained networks in your own Python code as follows:
+See `Examples.ipynb`.
 
-```.python
-with open('ffhq.pkl', 'rb') as f:
-    G = pickle.load(f)['G_ema'].cuda()  # torch.nn.Module
-z = torch.randn([1, G.z_dim]).cuda()    # latent codes
-c = None                                # class labels (not used in this example)
-img = G(z, c)                           # NCHW, float32, dynamic range [-1, +1]
-```
-
-The above code requires `torch_utils` and `dnnlib` to be accessible via `PYTHONPATH`. It does not need source code for the networks themselves &mdash; their class definitions are loaded from the pickle via `torch_utils.persistence`.
 
 ## License
 
