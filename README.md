@@ -44,9 +44,9 @@ This runs a grid of 10000 simulations. You can control the cells that will run i
 Outputs from the each cell of the grid (that is, each instantiation of the model) will be saved to the path set in the variable `path_to_save_wts_on_bucket` in the file `grid_cell.py`. Make sure to set other paths for data dumps (`path_to_save_wts_on_flash`, `slurm_out_folder`) as necessary.
 
 Each model instantiation, once its weight modularity exceeds 0.1 and reaches a stable number of clusters, begins to save 
-	- *spike times* to a text file (one `spiketime` and `neuron_id` per line) 
-	- *STD and STF states*
-	- *other internal states* needed to resume the simulation later (`DSPS`, `STPS`, `X`).
+	- **spike times** to a text file (one `spiketime` and `neuron_id` per line) 
+	- **STD and STF states**
+	- **other internal states** needed to resume the simulation later (`DSPS`, `STPS`, `X`).
 
 
 
