@@ -31,7 +31,7 @@ This repository is a single-core C++/Python implementation of a recurrent networ
 First compile the C++ module:
 
 ```.bash
-g++ -std=gnu++11 -Ofast -shared -fPIC -ftree-vectorize -march=native -mavx bmm_9_haga_grid.cpp -o
+g++ -std=gnu++11 -Ofast -shared -fPIC -ftree-vectorize -march=native -mavx bmm_9_haga_grid.cpp -o bmm.dylib
 ```
 
 ## Running a grid of simulations on a cluster
